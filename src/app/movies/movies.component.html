@@ -1,0 +1,13 @@
+<div class="container">
+    <div class="stylebox">
+        <h1 class="text-center">Streamify</h1>
+        <div class="search">
+            <input type="text" #search class="form-control text-center" (keyup.enter)="getMovies(search.value)" placeholder="Search Movie">
+            <p class="text-center">Press Enter to Search</p>
+        </div>
+    </div>
+</div>
+<div class="container">
+    <app-movietile *ngFor="let movie of movies" [movie]="movie"></app-movietile>
+    <p *ngIf="movies.length == 0">Search returned no results.</p> 
+</div>

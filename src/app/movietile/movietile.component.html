@@ -1,0 +1,13 @@
+<div class="movie">
+  <a routerLink="/movies/{{movie.imdbID}}">
+  <div>
+    <p>{{movie.Title}} ({{movie.Year}})</p>
+  </div>
+  <div>
+    <img src="{{movie.Poster}}" [alt]="movie.Title" />
+  </div>
+   <div>
+         <span><h3>{{movie.Title}} ({{movie.Year}})</h3></span>
+   </div>
+  </a>
+</div>
